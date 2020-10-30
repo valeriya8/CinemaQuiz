@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="CinemaQuiz"
+                android:textColor="#F1F1F5"
+                android:textSize="50sp"
+                app:fontFamily="@font/bangers" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image_sheldon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="292dp"
+                    android:background="#7857D8"
+                    android:src="@drawable/sheldon"
+                    app:srcCompat="@drawable/sheldon" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#7857D8"
+                    android:textColor="#E8E6F7"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="What serie is this?"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/friend_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Friends"
+                    style="@style/checkBoxStyle"/>
+
+                <CheckBox
+                    android:id="@+id/big_bang_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="The Big Bang Theory"
+                    style="@style/checkBoxStyle"
+                    />
+
+                <CheckBox
+                    android:id="@+id/two_man_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Two and a Half Men"
+                    style="@style/checkBoxStyle"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image_sherlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="166dp"
+                    android:background="#7857D8"
+                    android:src="@drawable/sherlock" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Where do you know him from?"
+                    android:background="#7857D8"
+                    android:textColor="#E8E6F7"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/enola_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Enola"
+                    style="@style/checkBoxStyle"/>
+
+                <CheckBox
+                    android:id="@+id/picky_blinders_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Picky Blinders"
+                    style="@style/checkBoxStyle"/>
+
+                <CheckBox
+                    android:id="@+id/sherlock_holmes_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Sherlock Holmes"
+                    style="@style/checkBoxStyle"/>
+
+            </LinearLayout>
+
+
+
+
+            <!--- -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/border"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image_mila"
+                    android:layout_width="match_parent"
+                    android:layout_height="284dp"
+                    android:background="#7857D8"
+                    android:src="@drawable/mila" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Who is she?"
+                    android:background="#7857D8"
+                    android:textColor="#E8E6F7"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/mila_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Mila Kunis"
+                    style="@style/checkBoxStyle"/>
+
+                <CheckBox
+                    android:id="@+id/answer_selena"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Selena Gomez"
+                    style="@style/checkBoxStyle"/>
+
+                <CheckBox
+                    android:id="@+id/answer_dani"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Daniela Ruah"
+                    style="@style/checkBoxStyle"/>
+
+            </LinearLayout>
+            <!--- -->
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:background="@drawable/border"
+                android:onClick="submitAnswers"
+                android:text="Done"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Your Score:"
+                    android:textColor="#F1F1F5"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"/>
+
+                <TextView
+                    android:id="@+id/total_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="0"
+                    android:textColor="#E8E6F7"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:background="@drawable/border"
+                    android:onClick="resetButton"
+                    android:text="Reset"
+                    android:layout_marginTop="30dp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
